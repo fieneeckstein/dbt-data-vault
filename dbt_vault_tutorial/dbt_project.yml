@@ -35,3 +35,18 @@ models:
     # Config indicated by + and applies to all files under models/example/
     example:
       +materialized: view
+    raw:
+      +schema: raw
+      +materialized: 
+    stage:
+      +materialized: view
+      +schema: stage
+    raw_vault:
+      +materialized: incremental
+      +schema: raw_vault
+    star:
+      +materialized: table
+      +schema: star
+      +tags: star
+    utils:
+      +schema: utils
