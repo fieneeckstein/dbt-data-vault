@@ -1,1 +1,4 @@
-dbt-vault-venv
+dbt-vault-venv/
+dbt_vault_tutorial/target/
+dbt_vault_tutorial/dbt_packages/
+logs/
