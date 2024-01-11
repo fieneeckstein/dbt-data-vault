@@ -1,0 +1,14 @@
+version: 2
+
+sources:
+  - name: bikerpoint
+    database: bikerental  
+    schema: public  
+    tables:
+      - name: contact
+      - name: customer
+      - name: item
+      - name: product
+      - name: retour
+      - name: purchase
+      - name: crm_customer
