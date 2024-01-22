@@ -1,0 +1,6 @@
+version: 2
+
+models:
+  - name: hub_customer
+  - name: hub_product
+  - name: hub_purchase
