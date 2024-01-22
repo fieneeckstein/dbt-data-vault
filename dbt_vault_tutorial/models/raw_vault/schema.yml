@@ -4,3 +4,5 @@ models:
   - name: hub_customer
   - name: hub_product
   - name: hub_purchase
+  - name: link_customer_purchase
+  - name: link_purchase_product
