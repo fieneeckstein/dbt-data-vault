@@ -8,7 +8,8 @@ config-version: 2
 
 vars:
   star_date: 2024-01-01
-  
+  load_date: 2024-01-01
+
 # This setting configures which "profile" dbt uses for this project.
 profile: 'dbt_vault_tutorial'
 

@@ -1,6 +1,6 @@
 
 with purchase_data as (
-    select *, current_timestamp as load_date from {{ source('bikerpoint','purchase') }}
+    select *, to_date('{{var('load_date')}}' ,'yyyy-mm-dd') as load_date from {{ source('bikerpoint','purchase') }}
 ),
 customer_nk as (
     select id as cid, customerno from  {{ source('bikerpoint','customer') }} 

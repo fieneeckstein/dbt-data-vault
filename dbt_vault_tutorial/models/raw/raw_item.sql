@@ -1,5 +1,5 @@
 with item_data as (
-    select *, current_timestamp as load_date from {{ source('bikerpoint','item') }}
+    select *, to_date('{{var('load_date')}}' ,'yyyy-mm-dd') as load_date from {{ source('bikerpoint','item') }}
 ),
 purchase_nk as (
     select id as purId, orderno from  {{ source('bikerpoint','purchase') }} 
