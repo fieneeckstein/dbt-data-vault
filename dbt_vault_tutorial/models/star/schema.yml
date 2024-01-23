@@ -3,3 +3,4 @@ version: 2
 models:
   - name: dim_product
   - name: dim_customer
+  - name: fct_sale
