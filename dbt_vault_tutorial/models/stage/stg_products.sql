@@ -14,7 +14,6 @@ hashed_columns:
       - ean
       - airpressure
       - operation
-      - EFFECTIVE_FROM
   PRODUCT_PRICE_HASHDIFF:
     is_hashdiff: true
     columns:
