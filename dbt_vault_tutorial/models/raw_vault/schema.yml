@@ -10,3 +10,4 @@ models:
   - name: sat_purchase_details
   - name: sat_product_details
   - name: sat_customer_crm_details
+  - name: sat_product_price

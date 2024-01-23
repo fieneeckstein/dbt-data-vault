@@ -2,12 +2,10 @@
 source_model: "stg_products"
 src_pk: "PRODUCT_PK"
 src_hashdiff: 
-  source_column: "PRODUCT_HASHDIFF"
+  source_column: "PRODUCT_PRICE_HASHDIFF"
   alias: "HASHDIFF"
 src_payload:
-  - "ean"
-  - "airpressure"
-  - "operation"
+  - "price"
 src_eff: "EFFECTIVE_FROM"
 src_ldts: "LOAD_DATE"
 src_source: "RECORD_SOURCE"
