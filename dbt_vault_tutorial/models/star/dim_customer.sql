@@ -1,5 +1,5 @@
 with active_satellite_entry as (
-select customer_pk as active_cpk, sat_customer_details_ldts as active_ldts from {{ ref('pit_customer') }} where  as_of_date  = current_date + 1
+select customer_pk as active_cpk, sat_customer_details_ldts as active_ldts from {{ ref('pit_customer') }} where  as_of_date = to_date('{{var('star_date')}}' ,'yyyy-mm-dd') 
 ),
 
 final as (
