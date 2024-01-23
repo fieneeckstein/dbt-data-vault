@@ -1,0 +1,6 @@
+version: 2
+
+models:
+  - name: as_of_date
+  - name: pit_customer
+  - name: pit_product
