@@ -6,3 +6,7 @@ models:
   - name: hub_purchase
   - name: link_customer_purchase
   - name: link_purchase_product
+  - name: sat_customer_details
+  - name: sat_purchase_details
+  - name: sat_product_details
+  - name: sat_customer_crm_details
