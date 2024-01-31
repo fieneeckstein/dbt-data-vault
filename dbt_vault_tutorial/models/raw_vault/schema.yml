@@ -2,8 +2,59 @@ version: 2
 
 models:
   - name: hub_customer
+    columns: 
+      - name: customerno
+        tests:
+          - unique
+          - not_null
+      - name: load_date
+        tests:
+          - not_null
+      - name: customer_pk
+        tests:
+          - unique
+          - not_null
+      - name: record_source
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['raw_crm_customers', 'raw_customers']
   - name: hub_product
+    columns: 
+      - name: ean
+        tests:
+          - unique
+          - not_null
+      - name: load_date
+        tests:
+          - not_null
+      - name: product_pk
+        tests:
+          - unique
+          - not_null
+      - name: record_source
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['raw_product']
   - name: hub_purchase
+    columns: 
+      - name: orderno
+        tests:
+          - unique
+          - not_null
+      - name: load_date
+        tests:
+          - not_null
+      - name: purchase_pk
+        tests:
+          - unique
+          - not_null
+      - name: record_source
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['raw_purchase']
   - name: link_customer_purchase
   - name: link_purchase_product
   - name: sat_customer_details
