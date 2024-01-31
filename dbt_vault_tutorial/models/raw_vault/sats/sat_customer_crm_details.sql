@@ -6,6 +6,8 @@ src_hashdiff:
   alias: "HASHDIFF"
 src_payload:
   - "email"
+  - "customerno"
+
   
 src_eff: "EFFECTIVE_FROM"
 src_ldts: "LOAD_DATE"
