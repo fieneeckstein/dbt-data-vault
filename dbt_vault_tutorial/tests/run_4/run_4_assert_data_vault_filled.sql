@@ -41,7 +41,7 @@ FROM (
     OR
     (table_name = 'link_customer_purchase' AND entry_count != (SELECT count (distinct orderno) from {{ ref('raw_purchase' )}}))
      OR
-    (table_name = 'link_purchase_product' AND entry_count !=  522 )--(SELECT count (distinct id) from {{ ref('raw_item' )}})   ) --todo: warum nicht so viele wie es items gibt
+    (table_name = 'link_purchase_product' AND entry_count !=  523 )--(SELECT count (distinct id) from {{ ref('raw_item' )}})   ) --todo: warum nicht so viele wie es items gibt
     OR
     (table_name = 'sat_customer_details' AND entry_count != (SELECT count (distinct customerno) from {{ ref('raw_customer' )}}))
     OR
@@ -98,7 +98,7 @@ FROM (
 --    OR
 --    (table_name = 'link_customer_purchase' AND entry_count != (SELECT count (distinct orderno) from purchase))
 --     OR
---    (table_name = 'link_purchase_product' AND entry_count !=  522  )
+--    (table_name = 'link_purchase_product' AND entry_count !=  523  )
 --    OR
 --    (table_name = 'sat_customer_details' AND entry_count != (SELECT count (distinct customerno) from customer))
 --    OR
@@ -107,4 +107,3 @@ FROM (
 --    (table_name = 'sat_product_details' AND entry_count != 116 )-- Produkte mit derselben ean werden als selbes Produkt betrachtet, das sich verändert hat -> einige fälschliche Satelliteneinträge
 --    OR
 --    (table_name = 'sat_customer_crm_details' AND entry_count != (SELECT count (distinct customerno)+1 from crm_customer))
---
