@@ -1,5 +1,5 @@
 with active_purchase_details as (
-   select  deliverydate, orderdate, shipdate, deliverydate - orderdate as waiting_time,  shipdate-orderdate as processing_time, customerno, purchase_pk from {{ ref('sat_purchase_details') }}
+   select  deliverydate, orderdate, shipdate, deliverydate - orderdate as waiting_time,  shipdate-orderdate as processing_time, customerno, purchase_pk from {{ ref('sat_purchase_details') }} where load_date < to_date('{{var('star_date')}}' ,'yyyy-mm-dd')
 ),
 dim_customer_fk as (
     select customer_pk, customerno as custno from {{ ref('dim_customer') }}
