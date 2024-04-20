@@ -14,7 +14,6 @@ Nach und nach wird eine Datenpipeline entstehen, die die folgende Architektur er
 
 ## Technische Voraussetzungen
 
-- [Ostfalia Gitlab](https://gitlab-fi.ostfalia.de/)-Account
 - [Python](https://www.python.org/downloads/) >=3.8
 - [PostgreSQL](https://www.postgresql.org/download/)
 - Datenbank-UI (z.B. [DBeaver](https://dbeaver.io/download/) oder [Beekeeper](https://www.beekeeperstudio.io/get))
@@ -33,7 +32,7 @@ Wir werden Beispieldaten eines Fahrradverleihs verwenden. Diese Daten müssen im
 
 ### 0.2 Installation und Projekt-Setup
 
-- Erstellen Sie von folgendem [Gitlab-Repository](https://gitlab-fi.ostfalia.de/id664409/dbt-vault) eine Fork in Ihren eigenen Namespace. Checken Sie den branch `main` aus
+- Erstellen Sie eine Fork dieses Projekts. Checken Sie den branch `init` aus
 - Navigieren Sie in Ihrem Dateisystem in das Repository
 - Virtuelle Python Umgebung (venv) erstellen `python -m venv dbt-vault-venv`
 - Stellen Sie sicher, dass venv aktiv ist. Sonst aktivieren: `dbt-vault-venv\Scripts\activate`
