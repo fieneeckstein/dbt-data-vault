@@ -597,7 +597,3 @@ Machen Sie sich mit dem Verhalten der Pipeline vertraut. Probieren Sie beispiels
 
 - Probleme? Code bis hier hin im branch `feature/4.6_manipulate_load_date`
 
-## 5. Mögliche Erweiterungen/Übungsaufgaben (@Frank)
-- In früheren Schritten wurden schon die `effective_from`-flags vorbereitet. Man könnte nun noch einen weiteren Data Mart basierend auf diesen Daten erstellen
-- Man könnte einen merge-Schritt bei mehreren Satelliten einbauen (2 Satelliten liefern verschiedene E-Mail Adressen -> Verwendung des jüngeren Werts bspw.)
-
