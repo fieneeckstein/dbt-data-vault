@@ -4,8 +4,8 @@
 DB_HOST="localhost"
 DB_PORT="5432"
 DB_NAME="bikerental"
-DB_USER="postgres"
-DB_PASSWORD="password"
+DB_USER="*****"
+DB_PASSWORD="******"
 
 # Pfad zum SQL-Skript
 SQL_SCRIPT_1=".\data_scripts\init-dump.sql"
