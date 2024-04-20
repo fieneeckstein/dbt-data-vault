@@ -1,4 +1,4 @@
-# (WIP) Tutorial: Data Vault mit [dbt](https://www.getdbt.com/) und [automateDV](https://automate-dv.readthedocs.io/en/latest/)
+# Tutorial: Data Vault mit [dbt](https://www.getdbt.com/) und [automateDV](https://automate-dv.readthedocs.io/en/latest/)
 
 Dieses Dokument und Repository umfasst die Erstellung eines Data Warehouse mit Data Vault Schema mittels dbt und der Bibliothek automateDV. Die Basistechnologie ist dbt (data build tool) und die Bibliothek automateDV stellt lediglich dbt-Funktionen bereit, die im Kontext von Data Vault nützlich sind.
 Das Tutorial wird aufeinander aufbauen und ist dazu gedacht, dass selbst mitprogrammiert wird, um die Effekte in der eigenen Datenbank zu erleben. Sollte trotz Erklärung und Debuggings nicht das erwartete Verhalten auftreten, gibt es zu jedem Branch einen Git-Branch der ausgecheckt werden kann, um mit einem sauberem Entwicklungsstand weiterzumachen.
